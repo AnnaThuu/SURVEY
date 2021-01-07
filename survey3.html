@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Survey Creator & Manager
+    </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="./bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="./Survey.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="Survey.css">
+<body>
+<div class="khungtrong">
+    <h1 class="tieude">Khảo sát về nhu cầu uống trà sữa</h1></br></br> 
+    <div class="container">
+        <form>
+        <div class="row">
+            <div class="col-md-4">
+            <div class="cột1">
+                <label class="tentuoi" for="tên">*Tên:</label> 
+            <input id="Tên" class="khung" type="text" name="Tên" placeholder="Nhập họ và tên" required=true>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="cột2">
+                <label class="tentuoi" for="tên">*Email:</label>
+            <input id="Email" class="khung" type="text" name="Email" placeholder="Nhập email" required=true>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="cột3">
+                <label class="tentuoi" for="tên">*Tuổi:</label>
+            <input id="Tuổi" class="khung" type="text" name="Tuổi" placeholder="Nhập tuổi" required=true>
+            </div>
+            </div>
+            </div>
+
+
+    <div class="cauhoi">
+    <label class="câu" for="tên">1. Bạn có uống trà sữa không?</label></br>
+    <input class="dapan" name="Cau1" type="radio" value="Có">Có</br>
+    <input class="dapan" name="Cau1" type="radio" value="Không">Không
+</div>       
+<div class="cauhoi">    
+<label class="câu" for="tên">2. Bạn thường mua trà sữa với giá bao nhiêu?</br></label></br>
+<select>
+
+<option name="Cau2"  value="Dưới 20.000đ">Dưới 20.000đ</option>
+<option name="Cau2" value="Từ 20.000 đến 50.000đ">Từ 20.000 đến 50.000đ</option>
+<option name="Cau2" value="Trên 50.000đ">Trên 50.000đ</option>
+</select>
+</div> 
+<div class="cauhoi">
+<label class="câu" for="tên">3. Bạn thường mua bao nhiêu ly trà sữa trong 1 lần?</label></br>
+                    
+                 <input class="dapan" name="Cau3" type="radio" value="1 ly">1 ly</br>
+                 <input class="dapan" name="Cau3" type="radio" value="2-5 ly">2-5 ly</br>
+                 <input class="dapan" name="Cau3" type="radio" value="Trên 5 ly">TRên 5 ly
+  </div>
+  <div class="cauhoi">
+    <label class="câu" for="tên">4. Bạn thường mua trà sữa ở đâu?</label></br>
+<input class="dapan" name="Cau4" type="checkbox" value="Vỉa hè">Vỉa hè</br>
+<input class="dapan" name="Cau4" type="checkbox" value="Gongcha">Gongcha</br>
+<input class="dapan" name="Cau4" type="checkbox" value="Toocha">Toocha</br>
+<input class="dapan" name="Cau4" type="checkbox" value="Nơi khác">Nơi khác...
+</div>
+<div class="cauhoi">
+    <label class="câu" for="tên">5. Bạn chọn mua với tiêu chí nào? </label></br>
+<input class="dapan" name="Cau5" type="checkbox" value="Giá rẻ">Giá rẻ</br>
+<input class="dapan" name="Cau5" type="checkbox" value="View quán đẹp">View quán đẹp</br>
+<input class="dapan" name="Cau5" type="checkbox" value="Có thương hiệu">Có thương hiệu</br>
+<input class="dapan" name="Cau5" type="checkbox" value="Chất lượng">Chất lượng
+</div>
+<div class="cauhoi">
+    <label class="câu" for="tên">6. Bạn có thường xuyên thay đổi hãng trà sữa khác không?</label></br>
+    <input class="dapan" name="Cau6" type="radio" value="Có">Có</br>
+    <input class="dapan" name="Cau6" type="radio" value="Không">Không
+</div>
+<div class="cauhoi">
+    <label class="câu" for="tên">7. Bao lâu bạn mua trà sữa 1 lần?</label></br>
+     <input class="dapan" name="Cau7" type="radio" value="1 lần/ngày">1 lần/ngày</br>
+     <input class="dapan" name="Cau7" type="radio" value="2-3 lần/ngày">2-3 lần/ngày</br>
+     <input class="dapan" name="Cau7" type="radio" value="4-5 lần/tuần">4-5 lần/tuần</br>
+</div>
+<div class="s">
+    <input class="submit" type="Submit" onclick="NopKhaoSat()">
+</div>
+</form>
+</div>
+<a href="https://www.facebook.com/ngocx.nkox" target="_blank" class="Annathu"></a>
+    
+</body>

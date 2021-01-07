@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Survey Creator & Manager
+    </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="./bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="./Survey.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="Survey.css">
+<body>
+<div class="khungtrong">
+    <h1 class="tieude">Khảo sát nhu cầu mua sắm Online</h1></br></br> 
+    <div class="container">
+        <form>
+        <div class="row">
+            <div class="col-md-4">
+            <div class="cột1">
+                <label class="tentuoi" for="tên">*Tên:</label> 
+            <input id="Tên" class="khung" type="text" name="Tên" placeholder="Nhập họ và tên" required=true>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="cột2">
+                <label class="tentuoi" for="tên">*Email:</label>
+            <input id="Email" class="khung" type="text" name="Email" placeholder="Nhập email" required=true>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="cột3">
+                <label class="tentuoi" for="tên">*Tuổi:</label>
+            <input id="Tuổi" class="khung" type="text" name="Tuổi" placeholder="Nhập tuổi" required=true>
+            </div>
+            </div>
+            </div>
+
+            <div class="cauhoi">
+                <label class="câu" for="tên">1. Bạn đã từng tham gia mua sắm trực tuyến chưa?</label></br>         
+                           <input class="dapan" name="Cau1" type="radio" value="có">Có
+                                 <input class="dapan" name="Cau1" type="radio" value="chưa">Chưa
+                   </div>
+             <div class="cauhoi">
+                   <label class="câu" for="tên">2. Ước tính giá trị mua sắm trong năm 2020:</br></label></br>
+                   <select>      
+                    <option name="Cau2"  value="Dưới 3 trăm nghìn">Dưới 3 trăm nghìn</option>
+                    <option name="Cau2" value="Từ 3 đến 500 nghìn">Từ 3-5 giờ</option>
+                    <option name="Cau2" value="Từ 5 trăm đến 1 triệu">Từ 5 trăm đến 1 triệu</option>
+                    <option name="Cau2"value="Từ 1 đến 3 triệu">Từ 1 đến 3 triệu</option>
+                    <option name="Cau2" value="Trên 3 triệu">Trên 3 triệu</option>
+                    </select>
+                    </div>
+               <div class="cauhoi">
+                <label class="câu" for="tên">3. Bạn thường mua sắm hàng hóa/ dịch vụ nào trên mạng?</label></br>
+                 <input class="dapan" name="Cau3" type="checkbox" value="Thực phẩm">Thực phẩm</br>
+                <input class="dapan" name="Cau3" type="checkbox" value="Thiết bị đồ dùng gia đình">Thiết bị đồ dùng gia đình</br>
+                 <input class="dapan" name="Cau3" type="checkbox" value="Quần áo, giày dép và mĩ phẩm">Quần áo, giày dép và mĩ phẩm</br>
+                 <input class="dapan" name="Cau3" type="checkbox" value="Vé máy bay, vé tàu hỏa, vé xem phim...">Vé máy bay, vé tàu hỏa, vé xem phim...</br>
+                 <input class="dapan" name="Cau3" type="checkbox" value="Khác">Khác
+               </div>
+               <div class="cauhoi">
+                <label class="câu" for="tên">4. Thông thường bạn thanh toán các sản phẩm/dịch vụ đặt hàng qua mạng bằng hình thức nào?</label></br>
+                 <input class="dapan" name="Cau4" type="checkbox" value="Tiền mặt khi nhận hàng">Tiền mặt khi nhận hàng</br>
+                <input class="dapan" name="Cau4" type="checkbox" value="Ví điện tử(như Airpay, VNpay,...)">Ví điện tử(như Airpay, VNpay,...)</br>
+                 <input class="dapan" name="Cau4" type="checkbox" value="Chuyển khoản qua ngân hàng">Chuyển khoản qua ngân hàng</br>
+                 <input class="dapan" name="Cau4" type="checkbox" value="Các phương tiện thanh toán khác">Các hình thức thanh toán khác 
+               </div>
+               <div class="cauhoi">
+                <label class="câu" for="tên">5. Bạn thường tìm kiếm thông tin khi mua sắm trên mạng qua?</label></br>
+                 <input class="dapan" name="Cau5" type="checkbox" value="Thiết bị di động (điện thoại, máy tính bảng…)">Thiết bị di động (điện thoại, máy tính bảng…)</br>
+                <input class="dapan" name="Cau5" type="checkbox" value="Máy tính để bàn, Máy tính xách tay">Máy tính để bàn, Máy tính xách tay</br>
+                 <input class="dapan" name="Cau5" type="checkbox" value="Hỏi bạn bè, người thân">Hỏi bạn bè, người thân</br>
+               <input class="dapan" name="Cau5" type="checkbox" value="Khác">Khác
+               </div>
+                <div class="cauhoi">
+              <label class="câu" for="tên">6. Những yếu tố mà bạn quan tâm khi mua sắm trực tuyến?</label></br>
+                  <input class="dapan" name="Cau6" type="checkbox" value="Giá cả">Giá cả</br>
+                  <input class="dapan" name="Cau6" type="checkbox" value="Thương hiệu của sản phẩm/dịch vụ">Thương hiệu của sản phẩm/dịch vụ</br>
+              <input class="dapan" name="Cau6" type="checkbox" value="Uy tín của người bán/website bán hàng">Uy tín của người bán/website bán hàng</br>
+                     <input class="dapan" name="Cau6" type="checkbox" value="Cách thức đặt hàng, thanh toán và giao nhận hàng hóa">Cách thức đặt hàng, thanh toán và giao nhận hàng hóa
+                   </div>
+                        
+                <div class="cauhoi">
+                 <label class="câu" for="tên">7. Bạn có hài lòng khi mua sắm trực tuyến không?</label></br>         
+                      <input class="dapan" name="Cau7" type="radio" value="Rất hài lòng">Rất hài lòng</br>  
+                          <input class="dapan" name="Cau7" type="radio" value="Hài lòng">Hài lòng</br>  
+                          <input class="dapan" name="Cau7" type="radio" value="Bình thường">Bình thường</br>  
+                          <input class="dapan" name="Cau7" type="radio" value="Không hài lòng">Không hài lòng
+                    </div>           
+               
+<div class="s">
+    <input class="submit" type="Submit" onclick="NopKhaoSat()">
+</div>
+</form>
+</div>
+<a href="https://www.facebook.com/ngocx.nkox" target="_blank" class="Annathu"></a>
+    
+</body>

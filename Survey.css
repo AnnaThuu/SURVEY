@@ -1,0 +1,73 @@
+body {
+    background: url("https://www.transparenttextures.com/patterns/brick-wall.png") firebrick;
+}
+.tieude{
+    text-align:center;
+    font-family:Dancing Script;
+    color: red;
+    font-weight: bolder;
+    font-size: 50px;
+    box-shadow: 0px 2px 4px -1px black;
+}
+.khungtrong {
+    margin-top: 70px;
+   margin-bottom: 70px;
+        margin-left: 300px;
+        margin-right: 300px;
+        background-color: #FFFFCC;
+        border-radius: 10px;
+    
+}
+
+
+.cauhoi{
+    margin: 20px;
+    margin-bottom: 10px;
+}
+.câu{
+    font-weight: bold;
+    
+}
+.row{
+    font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+.dapan{
+    margin:7px;
+}
+.khung{
+    box-shadow: 2px 2px 4px -1px black;
+}
+.submit{
+    
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    color: white;
+margin-top: 70px;
+margin-bottom: 20px;
+border-radius: 7px;
+}
+
+.s{
+    margin-left: 200px;
+        margin-right: 200px;
+        background-color:  #FFFFCC;
+        text-align: center;
+       
+}
+
+.Annathu::after {
+    content: 'Anna Thu';
+    font-size: 5vw;
+    position: absolute;
+    right: 0rem;
+    top: 7rem;
+    transform: rotateZ(30deg);
+    text-shadow: 0 0 10px #07cff6, 0 0 10px #07cff6, 0 0 10px #07cff6, 0 0 30px #07cff6, 0 0 50px #07cff6, 0 0 70px #07cff6, 0 0 100px #07cff6;
+    color: white;
+    font-family: Parisienne;
+    cursor: pointer;
+  }
+  

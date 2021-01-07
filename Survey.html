@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Survey Creator & Manager
+    </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="./bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="./Survey.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="Survey.css">
+<body>
+<div class="khungtrong">
+    <h1 class="tieude">Khảo sát nhu cầu sử dụng Internet</h1></br></br> 
+    <div class="container">
+        <form>
+        <div class="row">
+            <div class="col-md-4">
+            <div class="cột1">
+                <label class="tentuoi" for="tên">*Tên:</label> 
+            <input id="Tên" class="khung" type="text" name="Tên" placeholder="Nhập họ và tên" required=true>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="cột2">
+                <label class="tentuoi" for="tên">*Email:</label>
+            <input id="Email" class="khung" type="text" name="Email" placeholder="Nhập email" required=true>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="cột3">
+                <label class="tentuoi" for="tên">*Tuổi:</label>
+            <input id="Tuổi" class="khung" type="text" name="Tuổi" placeholder="Nhập tuổi" required=true>
+            </div>
+            </div>
+            </div>
+
+
+    <div class="cauhoi">
+    <label class="câu" for="tên">Câu 1. Bạn có sử dụng Internet không?</label></br>
+
+<input class="dapan" name="Cau1" type="radio" value="Thường xuyên sử dụng">Thường xuyên sử dụng</br>
+<input  class="dapan" name="Cau1" type="radio" value="Thỉnh thoảng sử dụng">Thỉnh thoảng sử dụng</br>
+<input class="dapan" name="Cau1" type="radio" value="Sử dụng khi cần thiết">Sử dụng khi cần thiết</br>
+<input class="dapan" name="Cau1" type="radio" value="Rất hiếm khi sử dụng">Rất hiếm khi sử dụng
+</div>       
+<div class="cauhoi">    
+<label class="câu" for="tên">Câu 2. Bạn truy cập Internet bâu lâu trong một ngày?</br></label></br>
+<select>
+
+<option name="Cau2"  value="Dưới 3 giờ">Dưới 3 giờ</option>
+<option name="Cau2" value="Từ 3-5 giờ">Từ 3-5 giờ</option>
+<option name="Cau2" value="Từ 5-7 giờ">Từ 5-7 giờ</option>
+<option name="Cau2"value="Từ 7-9 giờ">Từ 7-9 giờ</option>
+<option name="Cau2" value="Trên 9 giờ">Trên 9 giờ</option>
+</select>
+</div> 
+<div class="cauhoi">
+<label class="câu" for="tên">Câu 3. Thời điểm truy cập Internet nhiều nhất mỗi ngày?</label></br>
+                    
+                 <input class="dapan" name="Cau3" type="radio" value="08h-12h">08h-12h
+                 <input class="dapan" name="Cau3" type="radio" value="12h-16h">12h-16h
+                 <input class="dapan" name="Cau3" type="radio" value="16h-20h">16h-20h
+                 <input class="dapan" name="Cau3" type="radio" value="20h-24h">20h-24h
+                 <input class="dapan" name="Cau3" type="radio" value="00h-08h">00h-08h
+  </div>
+  <div class="cauhoi">
+    <label class="câu" for="tên">Câu 4. Phương tiện truy cập Internet?</label></br>
+<input class="dapan" name="Cau4" type="checkbox" value="Máy tính để bàn">Máy tính để bàn</br>
+<input class="dapan" name="Cau4" type="checkbox" value="Điện thoại di động">Điện thoại di động</br>
+<input class="dapan" name="Cau4" type="checkbox" value="Máy tính xách tay">Máy tính xách tay</br>
+<input class="dapan" name="Cau4" type="checkbox" value="Thiết bị khác (Ipad, tablet,...)">Thiết bị khác (Ipad, tablet,...)
+</div>
+<div class="cauhoi">
+    <label class="câu" for="tên">Câu 5. Bạn thường truy cập Internet ở đâu?</label></br>
+<input class="dapan" name="Cau5" type="checkbox" value="Tại nhà">Tại nhà</br>
+<input class="dapan" name="Cau5" type="checkbox" value="Tại trường học">Tại trường học</br>
+<input class="dapan" name="Cau5" type="checkbox" value="Tại chỗ làm">Tại chỗ làm</br>
+<input class="dapan" name="Cau5" type="checkbox" value="Tại cửa hàng Internet">Tại cửa hàng Internet</br>
+<input class="dapan" name="Cau5" type="checkbox" value="Tại các địa điểm truy cập công cộng (Nhà hàng, khách sạn,...)">Tại các địa điểm truy cập công cộng (Nhà hàng, khách sạn,...)</br>
+<input class="dapan" name="Cau5" type="checkbox" value="Chỗ khác">Chỗ khác
+</div>
+<div class="cauhoi">
+    <label class="câu" for="tên">Câu 6. Bạn thường truy cập Internet để làm gì?</label></br>
+<input class="dapan" name="Cau6" type="checkbox" value="Xem tin tức">Xem tin tức</br>
+<input class="dapan" name="Cau6" type="checkbox" value="Nghiên cứu học tập/làm việc">Nghiên cứu học tập/làm việc</br>
+<input class="dapan" name="Cau6" type="checkbox" value="Mua sắm, đấu giá">Mua sắm, đấu giá</br>
+<input class="dapan" name="Cau6" type="checkbox" value="E-mail, chat, gởi message">E-mail, chat, gởi message</br>
+<input class="dapan" name="Cau6" type="checkbox" value="Giải trí (Xem phim,nghe nhạc…)">Giải trí (Xem phim,nghe nhạc…)</br>
+<input class="dapan" name="Cau6" type="checkbox" value="Tìm việc làm">Tìm việc làm
+</div>
+<div class="cauhoi">
+    <label class="câu" for="tên">Câu 7. Internet có đem lại nhiều lợi ích cho bạn hay không?</label></br>
+     <input class="dapan" name="Cau7" type="radio" value="Internet đem lại nhiều lợi ích">Có</br>
+     <input class="dapan" name="Cau7" type="radio" value="Internet không đem lại lợi ích">Không</br>
+</div>
+<div class="s">
+    <input class="submit" type="Submit" onclick="NopKhaoSat()">
+</div>
+</form>
+</div>
+<a href="https://www.facebook.com/ngocx.nkox" target="_blank" class="Annathu"></a>
+    
+</body>
